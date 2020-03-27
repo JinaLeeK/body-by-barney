@@ -1,0 +1,22 @@
+{
+  "name": "body-by-barney",
+  "version": "1.0.0",
+  "description": "I love you!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinaLeeK/body-by-barney.git"
+  },
+  "author": "LM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinaLeeK/body-by-barney/issues"
+  },
+  "homepage": "https://github.com/JinaLeeK/body-by-barney#readme",
+  "dependencies": {
+    "actions-toolkit": "^3.0.1"
+  }
+}

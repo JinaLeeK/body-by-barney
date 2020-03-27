@@ -1,0 +1,17 @@
+name: Body by Barney
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  barney_job:
+    runs-on: ubuntu-latest
+    name: Barney is here
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: I love you
+        uses: ./ # Uses an action in the root directory
+        id: barney
