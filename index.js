@@ -10,12 +10,12 @@ console.log(context);
 
 setTimeout(function() {
     console.log("In setTimeout");
-    request('GET /repos/:owner/:repo/pulls/:pull_number', context.payload.repository({
+    request('GET /repos/:owner/:repo/pulls/:pull_number', context.repo({
         pull_number: pull_number
     })).then(function (pr_ressult) {
         console.log(pr_result);
         if (!pr_result.body) {
-            request('PATCH /repos/:owner/:repo/pulls/:pull_number/', context.payload.repository({
+            request('PATCH /repos/:owner/:repo/pulls/:pull_number/', context.repo({
                 pull_number: pull_number,
                 body: `![Barnard](${barney})`
             }))
